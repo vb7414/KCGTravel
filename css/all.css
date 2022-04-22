@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #f7f7f7;
+  background-image: url(../assets/Hero.png);
+  background-repeat: no-repeat;
+  height: 464px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 90px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 3.89px;
+  margin-bottom: 96px;
+}
+
+.header input {
+  width: 452px;
+  height: 48px;
+  font-size: 18px;
+  color: #000000;
+  line-height: 21px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  margin-bottom: 79px;
+}
+
+.header ::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.header :-ms-input-placeholder {
+  color: #000000;
+}
+
+.header ::-ms-input-placeholder {
+  color: #000000;
+}
+
+.header ::placeholder {
+  color: #000000;
+}
+
+.header .header__hotZone {
+  width: 800px;
+  height: 112px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 26px;
+  padding-top: 20px;
+}
+
+.header .header__hotZone p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.header .header__hotZone .header__hotZone--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__hotZone .header__hotZone--button button {
+  width: 130px;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 24px;
+}
+
+.header .header__hotZone .header__hotZone--button button.colorIsPurple {
+  background: #8a82cc;
+}
+
+.header .header__hotZone .header__hotZone--button button.colorIsOrange {
+  background: #ffa782;
+}
+
+.header .header__hotZone .header__hotZone--button button.colorIsYellow {
+  background: #f5d105;
+}
+
+.header .header__hotZone .header__hotZone--button button.colorIsBlue {
+  background: #559ac8;
+}
+
+.main {
+  background: #f7f7f7;
+  padding-top: 30px;
+}
+
+.main .main__zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+  color: #8a82cc;
+  margin-bottom: 24px;
+}
+
+.main .main__touristAttractionList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 22px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 464px;
+  height: 273px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 464px;
+  height: 155px;
+  color: #ffffff;
+  position: relative;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview h3 {
+  position: absolute;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview p {
+  position: absolute;
+  font-size: 16px;
+  z-index: 1;
+  right: 0;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture {
+  width: 464px;
+  height: 155px;
+  overflow: hidden;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture img {
+  width: 480px;
+  height: 320.25px;
+  margin-top: -100px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.clock img {
+  margin-left: 23px;
+  margin-right: 9px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.location img {
+  margin-left: 24px;
+  margin-right: 10px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.phone img {
+  margin-left: 26px;
+  margin-right: 13px;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer {
+  height: 90px;
+  background: #559ac8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer p.footer__datasource {
+  margin-top: 15px;
+  color: #ffd366;
+}

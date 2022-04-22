@@ -1,0 +1,131 @@
+.main__zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+  color: #8a82cc;
+  margin-bottom: 24px;
+}
+
+.main__touristAttractionList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 22px;
+}
+
+.main__touristAttractionList .main__touristAttraction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 464px;
+  height: 273px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 464px;
+  height: 155px;
+  color: #ffffff;
+  position: relative;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview h3 {
+  position: absolute;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview p {
+  position: absolute;
+  font-size: 16px;
+  z-index: 1;
+  right: 0;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture {
+  width: 464px;
+  height: 155px;
+  overflow: hidden;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture img {
+  width: 480px;
+  height: 320.25px;
+  margin-top: -100px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.clock img {
+  margin-left: 23px;
+  margin-right: 9px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.location img {
+  margin-left: 24px;
+  margin-right: 10px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.phone img {
+  margin-left: 26px;
+  margin-right: 13px;
+}
+
+.main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}

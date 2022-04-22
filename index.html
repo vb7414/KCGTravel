@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>高雄旅遊資訊</title>
+        <link rel="stylesheet" href="css/all.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <h1>高雄旅遊資訊</h1>
+                <input
+                    list="KaohsiungZone"
+                    placeholder="- - 請選擇行政區 - -"
+                />
+                <datalist id="KaohsiungZone">
+                    <option value="苓雅區"></option>
+                    <option value="三民區"></option>
+                    <option value="新興區"></option>
+                    <option value="鹽埕區"></option>
+                </datalist>
+                <div class="header__hotZone">
+                    <p>熱門行政區</p>
+                    <div class="header__hotZone--button">
+                        <button class="colorIsPurple">苓雅區</button>
+                        <button class="colorIsOrange">三民區</button>
+                        <button class="colorIsYellow">新興區</button>
+                        <button class="colorIsBlue">鹽埕區</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h2 class="main__zone"></h2>
+                <div class="main__touristAttractionList"></div>
+            </div>
+            <div class="footer">
+                <p>高雄旅遊網</p>
+                <p class="footer__datasource">資料來源 : 高雄市政府</p>
+            </div>
+        </div>
+
+        <script src="all.js"></script>
+    </body>
+</html>

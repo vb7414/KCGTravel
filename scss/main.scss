@@ -1,0 +1,90 @@
+.main__zone {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: #8a82cc;
+    margin-bottom: 24px;
+}
+
+.main__touristAttractionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 22px;
+    .main__touristAttraction {
+        display: flex;
+        flex-direction: column;
+        width: 464px;
+        height: 273px;
+        background: #ffffff;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 36px;
+
+        .main__touristAttractionPreview {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 464px;
+            height: 155px;
+            color: #ffffff;
+            position: relative;
+            h3 {
+                position: absolute;
+                font-size: 24px;
+                z-index: 1;
+            }
+            p {
+                position: absolute;
+                font-size: 16px;
+                z-index: 1;
+                right: 0;
+            }
+            .touristAttractionPicture {
+                width: 464px;
+                height: 155px;
+                overflow: hidden;
+                img {
+                    width: 640px * 3 / 4;
+                    height: 427px * 3 / 4;
+                    margin-top: -100px;
+                }
+            }
+        }
+        .main__touristAttractionInfo {
+            display: flex;
+            .main__touristAttractionInfo--leftside {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                .main__touristAttractionInfoData {
+                    display: flex;
+                    margin-top: 16px;
+                    &.clock {
+                        img {
+                            margin-left: 23px;
+                            margin-right: 9px;
+                        }
+                    }
+                    &.location {
+                        img {
+                            margin-left: 24px;
+                            margin-right: 10px;
+                        }
+                    }
+                    &.phone {
+                        img {
+                            margin-left: 26px;
+                            margin-right: 13px;
+                        }
+                    }
+                }
+            }
+            .main__touristAttractionInfo--rightside {
+                width: 30%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+    }
+}
