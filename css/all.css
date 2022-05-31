@@ -396,10 +396,10 @@ table {
 }
 .main .pagination li a {
   text-decoration: none;
-  color: black;
+  color: #4a4a4a;
 }
 .main .pagination .active a {
-  color: gray;
+  color: #559ac8;
 }
 
 .footer {
