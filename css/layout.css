@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
@@ -11,7 +12,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 90px;
+  padding-top: 89px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -28,14 +29,21 @@
   margin-bottom: 96px;
 }
 
-.header input {
+.header .KaohsiungZone {
+  /*移除箭頭樣式*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*改變右邊箭頭樣式*/
+  background: url("../assets/icons_down.png") no-repeat right 17px center;
+  padding-left: 9.5px;
   width: 452px;
   height: 48px;
   font-size: 18px;
   color: #000000;
   line-height: 21px;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 3px solid #ffffff;
   border-radius: 3px;
   margin-bottom: 79px;
@@ -75,6 +83,7 @@
           flex-direction: column;
   padding-left: 26px;
   padding-top: 20px;
+  margin-bottom: 49px;
 }
 
 .header .header__hotZone p {
@@ -97,6 +106,7 @@
   font-size: 20px;
   color: #ffffff;
   margin-left: 24px;
+  margin-bottom: 18px;
 }
 
 .header .header__hotZone .header__hotZone--button button.colorIsPurple {
@@ -118,6 +128,7 @@
 .main {
   background: #f7f7f7;
   padding-top: 30px;
+  padding-bottom: 41px;
 }
 
 .main .main__zone {
@@ -140,7 +151,6 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 22px;
 }
 
 .main .main__touristAttractionList .main__touristAttraction {
@@ -206,8 +216,16 @@
   display: flex;
 }
 
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo p {
+  font-size: 16px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside {
-  width: 70%;
+  width: 346px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,16 +258,17 @@
 }
 
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside {
-  width: 30%;
+  width: 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside img {
+  margin-right: 8px;
 }
 
 .footer {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,7 +152,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 90px;
+  padding-top: 89px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -160,43 +161,46 @@ table {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header h1 {
   font-size: 40px;
   color: #ffffff;
   letter-spacing: 3.89px;
   margin-bottom: 96px;
 }
-
-.header input {
+.header .KaohsiungZone {
+  /*移除箭頭樣式*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*改變右邊箭頭樣式*/
+  background: url("../assets/icons_down.png") no-repeat right 17px center;
+  padding-left: 9.5px;
   width: 452px;
   height: 48px;
   font-size: 18px;
   color: #000000;
   line-height: 21px;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 3px solid #ffffff;
   border-radius: 3px;
   margin-bottom: 79px;
 }
-
 .header ::-webkit-input-placeholder {
   color: #000000;
 }
-
+.header ::-moz-placeholder {
+  color: #000000;
+}
 .header :-ms-input-placeholder {
   color: #000000;
 }
-
 .header ::-ms-input-placeholder {
   color: #000000;
 }
-
 .header ::placeholder {
   color: #000000;
 }
-
 .header .header__hotZone {
   width: 800px;
   height: 112px;
@@ -215,20 +219,18 @@ table {
           flex-direction: column;
   padding-left: 26px;
   padding-top: 20px;
+  margin-bottom: 49px;
 }
-
 .header .header__hotZone p {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 14px;
 }
-
 .header .header__hotZone .header__hotZone--button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .header .header__hotZone .header__hotZone--button button {
   width: 130px;
   height: 42px;
@@ -237,20 +239,17 @@ table {
   font-size: 20px;
   color: #ffffff;
   margin-left: 24px;
+  margin-bottom: 18px;
 }
-
 .header .header__hotZone .header__hotZone--button button.colorIsPurple {
   background: #8a82cc;
 }
-
 .header .header__hotZone .header__hotZone--button button.colorIsOrange {
   background: #ffa782;
 }
-
 .header .header__hotZone .header__hotZone--button button.colorIsYellow {
   background: #f5d105;
 }
-
 .header .header__hotZone .header__hotZone--button button.colorIsBlue {
   background: #559ac8;
 }
@@ -258,8 +257,8 @@ table {
 .main {
   background: #f7f7f7;
   padding-top: 30px;
+  padding-bottom: 41px;
 }
-
 .main .main__zone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,7 +270,6 @@ table {
   color: #8a82cc;
   margin-bottom: 24px;
 }
-
 .main .main__touristAttractionList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,9 +278,7 @@ table {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 22px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +294,6 @@ table {
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 36px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,40 +309,41 @@ table {
   color: #ffffff;
   position: relative;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview h3 {
   position: absolute;
   font-size: 24px;
   z-index: 1;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview p {
   position: absolute;
   font-size: 16px;
   z-index: 1;
   right: 0;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture {
   width: 464px;
   height: 155px;
   overflow: hidden;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionPreview .touristAttractionPicture img {
   width: 480px;
   height: 320.25px;
   margin-top: -100px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo p {
+  font-size: 16px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside {
-  width: 70%;
+  width: 346px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,40 +352,54 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 16px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.clock img {
   margin-left: 23px;
   margin-right: 9px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.location img {
   margin-left: 24px;
   margin-right: 10px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--leftside .main__touristAttractionInfoData.phone img {
   margin-left: 26px;
   margin-right: 13px;
 }
-
 .main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside {
-  width: 30%;
+  width: 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.main .main__touristAttractionList .main__touristAttraction .main__touristAttractionInfo .main__touristAttractionInfo--rightside img {
+  margin-right: 8px;
+}
+.main .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .pagination li {
+  margin-left: 13px;
+  margin-right: 13px;
+}
+.main .pagination li a {
+  text-decoration: none;
+  color: black;
+}
+.main .pagination .active a {
+  color: gray;
 }
 
 .footer {
@@ -409,12 +419,10 @@ table {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .footer p {
   font-size: 14px;
   color: #ffffff;
 }
-
 .footer p.footer__datasource {
   margin-top: 15px;
   color: #ffd366;
